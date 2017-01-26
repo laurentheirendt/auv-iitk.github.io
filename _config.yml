@@ -15,6 +15,8 @@ wpm: 150
 port: 4444
 permalink: /temp_website/:title
 
+baseurl: /temp_website
+
 # jekyll-paginate
 paginate: 5
 paginate_path: /temp_website/page:num
