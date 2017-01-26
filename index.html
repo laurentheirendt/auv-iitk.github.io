@@ -60,7 +60,7 @@ layout: default
                 </header>
                     {% for item in site.citation %}
                     <p style="clear: both;">
-                    <span class="image {% cycle 'left', 'right' %}"><img src="{{ item.image }}" alt="" /></span>
+                    <span class="image {% cycle 'left', 'right' %}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" /></span>
                     <h3> <div align="left">{{ item.title }}<div> </h3>
                     <div align="left">{{ item.description }}</div>
                     <br>
@@ -75,7 +75,7 @@ layout: default
                 <table>
                   <tr>
                     {% for item in site.collaborators %}
-                      <td><a href="{{ item.remoteurl }}"><img src="{{ item.image }}" alt="" /></a></td>
+                      <td><a href="{{ item.remoteurl }}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" /></a></td>
                     {% endfor %}
                   </tr>
                 </table>
