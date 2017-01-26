@@ -1536,11 +1536,11 @@ body {
 }
 
 body {
-    background-color: #935d8c;
-    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #6F5E9D 15%, #5f4d93 85%);
-    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #6F5E9D 15%, #5f4d93 85%);
-    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #6F5E9D 15%, #5f4d93 85%);
-    background-image: url("images/overlay.png"), linear-gradient(45deg, #6F5E9D 15%, #5f4d93 85%);
+    background-color: #fff;
+    /*background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ffffff 15%, #ffffff 85%);
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ffffff 15%, #ffffff 85%);
+    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ffffff 15%, #ffffff 85%);
+    background-image: url("images/overlay.png"), linear-gradient(45deg, #ffffff 15%, #ffffff 85%);*/
 }
 
 body.is-loading *,
@@ -1560,8 +1560,8 @@ body.is-loading *:after {
 /* Type */
 
 body {
-    background-color: #935d8c;
-    color: rgba(255, 255, 255, 0.65);
+    background-color: #fff;
+    color: rgba(33, 33, 33, 0.65);
 }
 
 body,
@@ -2255,7 +2255,9 @@ input[type="radio"]:focus + label:before {
     display: inline-block;
     border-radius: 100%;
     padding: 0.65em;
-    margin: 0 0 2em 0;
+    margin: 0 0 0 0;
+    height: 165px;
+    width: 165px;
     cursor: default;
 }
 
@@ -2948,7 +2950,7 @@ table.alt tbody tr td {
 }
 
 .spotlight .content header.major {
-    margin: 0 0 2em 0;
+    margin: -2em 0 2em 0;
 }
 
 .spotlight .image {
@@ -3025,7 +3027,7 @@ table.alt tbody tr td {
 }
 
 #header.alt {
-    padding: 7em 5em 4em 5em;
+    padding: -7em 5em 4em -5em;
 }
 
 #header.alt h1 {
@@ -3055,7 +3057,7 @@ table.alt tbody tr td {
     transition-delay: 0s;
     display: block;
     margin: 0 0 1.5em 0;
-    padding-top: 1em;
+    padding-top: -2em;
 }
 
 #header.alt .logo img {
@@ -3124,26 +3126,26 @@ body.is-loading #header.alt > * {
 }
 
 body.is-loading #header.alt .logo {
-    -moz-transform: scale(0.8) rotate(-30deg);
-    -webkit-transform: scale(0.8) rotate(-30deg);
-    -ms-transform: scale(0.8) rotate(-30deg);
-    transform: scale(0.8) rotate(-30deg);
+    -moz-transform: scale(0.8) rotate(0deg);
+    -webkit-transform: scale(0.8) rotate(0deg);
+    -ms-transform: scale(0.8) rotate(0deg);
+    transform: scale(0.8) rotate(0deg);
 }
 
 /* Nav */
-.navbar-custom{background:white;position:absolute;top:0;left:0;width:100%;z-index:3;}
+.navbar-custom{background:rgba(51, 51, 51, 1);position:absolute;top:0;left:0;width:100%;z-index:3;height:20px;}
 .navbar-custom .navbar-brand{font-weight:800;}
 .navbar-custom .nav li a{text-transform:uppercase;font-size:18px;font-weight:800;}
-@media only screen and (min-width:768px){.navbar-custom{background:transparent;border-bottom:1px solid transparent;}
-.navbar-custom .navbar-brand{color:white;padding:20px;}
+@media only screen and (min-width:768px){.navbar-custom{background:rgba(51, 51, 51, 1);border-bottom:1px solid transparent;}
+.navbar-custom .navbar-brand{color:white;padding:15px;}
 .navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus{color:rgba(255, 255, 255, 0.8);}
-.navbar-custom .nav li a{color:white;padding:20px;}
+.navbar-custom .navbar-brand:focus{color:rgba(255, 255, 255, 1);}
+.navbar-custom .nav li a{color:white;padding:15px;}
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus{color:rgba(255, 255, 255, 0.8);}
+.navbar-custom .nav li a:focus{color:rgba(255, 255, 255, 1);}
 }
 @media only screen and (min-width:1170px){.navbar-custom{-webkit-transition:background-color 0.3s;-moz-transition:background-color 0.3s;transition:background-color 0.3s;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);-webkit-backface-visibility:hidden;backface-visibility:hidden;}
-.navbar-custom.is-fixed{position:fixed;top:-61px;background-color:rgba(255, 255, 255, 0.9);border-bottom:1px solid #f2f2f2;-webkit-transition:-webkit-transform 0.3s;-moz-transition:-moz-transform 0.3s;transition:transform 0.3s;}
+.navbar-custom.is-fixed{position:fixed;top:-61px;background-color:rgba(51, 51, 51, 1);border-bottom:1px solid transparent;-webkit-transition:-webkit-transform 0.3s;-moz-transition:-moz-transform 0.3s;transition:transform 0.3s;}
 .navbar-custom.is-fixed .navbar-brand{color:#404040;}
 .navbar-custom.is-fixed .navbar-brand:hover,
 .navbar-custom.is-fixed .navbar-brand:focus{color:#0085a1;}
@@ -3371,34 +3373,39 @@ body.is-loading #header.alt .logo {
 
 #main header.major h2:after {
     background-color: #dddddd;
-    background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-    background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-    background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-    background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+    background-image: -moz-linear-gradient(90deg, rgba(0, 135, 206, 1), rgba(211, 215, 224, 1), rgba(189, 89, 6, 1));
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 135, 206, 1), rgba(211, 215, 224, 1), rgba(189, 89, 6, 1));
+    background-image: -ms-linear-gradient(90deg, rgba(0, 135, 206, 1), rgba(211, 215, 224, 1), rgba(189, 89, 6, 1));
+    background-image: linear-gradient(90deg, rgba(0, 135, 206, 1), rgba(211, 215, 224, 1), rgba(189, 89, 6, 1));
+    /*
+    background-image: -moz-linear-gradient(90deg, rgba(254, 21, 13, 1), #ffffff, rgba(0, 168, 222, 1));
+    background-image: -webkit-linear-gradient(90deg, rgba(254, 21, 13, 1), #ffffff, rgba(0, 168, 222, 1));
+    background-image: -ms-linear-gradient(90deg, rgba(254, 21, 13, 1), #ffffff, rgba(0, 168, 222, 1));
+    background-image: linear-gradient(90deg, rgba(254, 21, 13, 1), #ffffff, rgba(0, 168, 222, 1));*/
 }
 
 #main table tbody tr {
-    border-color: #dddddd;
+    border-color:  #ffffff;
 }
 
 #main table tbody tr:nth-child(2n + 1) {
-    background-color: rgba(222, 222, 222, 0.25);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #main table th {
-    color: #636363;
+    color: #ffffff;
 }
 
 #main table thead {
-    border-bottom-color: #dddddd;
+    border-bottom-color: #ffffff;
 }
 
 #main table tfoot {
-    border-top-color: #dddddd;
+    border-top-color: #ffffff;
 }
 
 #main table.alt tbody tr td {
-    border-color: #dddddd;
+    border-color: #ffffff;
 }
 
 #main .spotlight .image {

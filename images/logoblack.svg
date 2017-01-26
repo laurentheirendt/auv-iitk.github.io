@@ -11,5 +11,5 @@
 </defs>
 <rect x="5" y="58.073" display="none" fill="none" stroke="#333333" stroke-width="10" stroke-miterlimit="10" width="1609" height="178"/>
 <rect x="2.36" y="43.902" fill="none" width="2014.894" height="370.213"/>
-<text transform="matrix(1 0 0 1 2.3599 192.3003)"><tspan x="0" y="0" fill="#333333" font-family="'Evolution'" font-size="200">open</tspan><tspan x="409.39" y="0" fill="#00A3E0" font-family="'Evolution'" font-size="200">COBRA</tspan></text>
+<text transform="matrix(1 0 0 1 2.3599 192.3003)" fill="#333333" font-family="'Evolution'" font-size="200">openCOBRA</text>
 </svg>

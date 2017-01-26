@@ -172,7 +172,7 @@ jQuery(document).ready(function($) {
 // typing animation
 $(function() {
     $(".typed").typed({
-        strings: ["A Platform For Reseach in Under Water Robotics !"],
+        strings: ["Welcome to the openCOBRA project!"],
         startDelay: 1000,
         typeSpeed: 10
     });

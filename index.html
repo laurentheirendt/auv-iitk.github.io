@@ -7,56 +7,77 @@ layout: default
             <span class="typedheader typed"></span> <!-- filled by main.js using typed.js -->
         </header>
         <div id="main">
-            <section id="intro" class="main">
-                <div class="spotlight">
-                    <div class="content">
-                        <header class="major">
-                            <h2>Who we are ?</h2>
-                        </header>
-                        <p>We are a bunch of overly optimistic, hardworking students working towards creating I.I.T. Kanpur's first Autonomous Under Water Vehicle. The current team consists of 20 students spanning various branches of engineering like Mechanical, Electrical, Computer Science, Physics, Material Science and Chemical at Indian Institute of Technology Kanpur.<br>Our mission is to participate in AUV competitions like NIOT SAVe, Robosub. The competition is a platform for students to display their skills in underwater robotics and build a connection with industries working along similar verticals. <br>Our vision is to lower the entry barier for research in underwater robotics. For this we have designed <i>Varun</i> such that any of its mechanical, electrical or software component can be individually improved and tested. Thus enabling researchers to focus on there field of research and using other pre-baked components.</p>
-                    </div>
-                    <span class="image"><img src="images/vehicles/varun.jpg" alt="varun" /></span>
-                </div>
-            </section>
-            <section id="subteams" class="main special">
+            <section id="packages" class="main special">
                 <header class="major">
-                    <h2>Sub Teams</h2>
+                    <h2>Packages</h2>
                 </header>
                 <ul class="features">
-                    {% for item in site.subteam %}
+                    {% for item in site.packages %}
                     <li>
-                        <span class="icon major {{ item.iconstyle }} {{ item.icon }}"></span>
-                        <h3>{{ item.title }}</h3>
-                        <p>{{ item.description }}</p>
+                        <span class="icon major {{item.style}}"><a href="{{item.remoteurl}}"><img src="{{item.image}}" height="{{item.size}}"/></a></span>
+                        <h3><a href="{{item.remoteurl}}">{{ item.title }}</a></h3>
+                        <p>{{ item.description }}</p><br>
+                        <a href="{{ item.remoteurl }}" class="button">Get it!</a>
+                        <ul class="actions">
+                            <li></li>
+                        </ul>
                     </li>
                     {% endfor %}
                 </ul>
             </section>
-            <section id="third" class="main special">
+            <section id="intro" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2>What is COBRA?</h2>
+                        </header>
+                        <p>The COnstraints Based Reconstruction and Analysis (<b>COBRA</b>) approach to systems biology accepts the fact that we <b>do not possess sufficiently detailed parameter data</b> to precisely model, in the biophysical sense, an organism at the genome scale.</p>
+<br>
+                          <p>The COBRA approach focuses on <b>employing physicochemical constraints</b> to define the set of feasible states for a biological network in a given condition based on current knowledge. These constraints include <b>compartmentalization</b>, <b>mass conservation</b>, <b>molecular crowding</b>, and <b>thermodynamic directionality</b>. More recently, transcriptome data have been used to reduce the size of the set of computed feasible states.</p>
+<br>
+                          <p>
+                            Although <b>COBRA</b> methods may not provide a unique solution, they provide a <b>reduced set of solutions</b> that may be used to <b>guide</b> biological hypothesis <b>development</b>. Given its initial success, COBRA has attracted attention from many investigators and has <b>developed rapidly in recent years</b> based on contributions from a growing number of laboratories – COBRA methods have been used in <b>hundreds of studies</b>.</p>
+                    </div>
+                    <span class="image"><img src="images/stoichio.png" alt="varun" /></span>
+                </div>
+            </section>
+            <section id="intro" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2>History</h2>
+                        </header>
+                        <p>The <b>openCOBRA project</b> has arisen to provide researchers with <b>easy access</b> to core COBRA methodologies, and to provide a repository for community contributed modules that build off of these core COBRA features. The <b>openCOBRA project</b> was initiated with tools for <b>MATLAB</b> but has now grown to include <b>Python</b> and <b>Julia</b>-based modules for dealing with the complex relationships of the next generation of COBRA models.</p>
+<br>
+                        <p>The openCOBRA project is currently maintained by <a href="http://sbrg.ucsd.edu/Researchers/Ebrahim">Ali Ebrahim</a> and <a href="http://lewislab.ucsd.edu/lab/n/">Nathan Lewis</a> from UCSD and <a href="http://wwwen.uni.lu/lcsb/research/systems_biochemistry/">Ronan Fleming</a> from the University of Luxembourg.</p>
+                    </div>
+                    <span class="image"><img src="images/history.png" alt="varun" /></span>
+                </div>
+            </section>
+            <section id="citation" class="main special">
                 <header class="major">
-                    <h2>AUV Competitions</h2>
+                    <h2>How to cite an <b>openCOBRA</b> package?</h2>
                 </header>
-                    {% for item in site.competition %}
+                    {% for item in site.citation %}
                     <p style="clear: both;">
                     <span class="image {% cycle 'left', 'right' %}"><img src="{{ item.image }}" alt="" /></span>
-                    <h3> {{ item.title }} </h3>
-                    {{ item.description }}
-                    <a href="{{ item.link }}"><i>Read more...</i></a>
+                    <h3> <div align="left">{{ item.title }}<div> </h3>
+                    <div align="left">{{ item.description }}</div>
+                    <br>
                     </p>
                     <br>
                     {% endfor %}
             </section>
-            <section id="fourth" class="main special">
+            <section id="collaborators" class="main special">
                 <header class="major">
-                    <h2>Research Collaborations</h2>
+                    <h2>Who is working on the openCOBRA project?</h2>
                 </header>
-                    {% for item in site.research %}
-                    <p style="clear: both;">
-                    <span class="image {% cycle 'left', 'right' %}"><img src="{{ item.image }}" alt="" /></span>
-                    <h3> {{ item.title }} </h3>
-                    {{ item.description }}
-                    </p>
-                    <br>
+                <table>
+                  <tr>
+                    {% for item in site.collaborators %}
+                      <td><a href="{{ item.remoteurl }}"><img src="{{ item.image }}" alt="" /></a></td>
                     {% endfor %}
+                  </tr>
+                </table>
             </section>
         </div>
