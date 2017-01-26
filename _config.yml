@@ -13,11 +13,11 @@ collections:
 wpm: 150
 
 port: 4444
-permalink: /:title
+permalink: /temp_website/:title
 
 # jekyll-paginate
 paginate: 5
-paginate_path: /page:num
+paginate_path: /temp_website/page:num
 
 # gem dependencies
 gems: [jekyll-paginate, jekyll-feed, jekyll-gist]
