@@ -3,7 +3,7 @@ layout: default
 ---
         <!-- Header -->
         <header id="header" class="alt">
-            <span class="logo"><img src="images/logo.png" alt="auv-iitk" /></span>
+            <span class="logo"><img src="images/logo.png" alt="openCOBRA"/></span>
             <span class="typedheader typed"></span> <!-- filled by main.js using typed.js -->
         </header>
         <div id="main">
@@ -31,14 +31,14 @@ layout: default
                         <header class="major">
                             <h2>What is COBRA?</h2>
                         </header>
-                        <p>The COnstraints Based Reconstruction and Analysis (<b>COBRA</b>) approach to systems biology accepts the fact that we <b>do not possess sufficiently detailed parameter data</b> to precisely model, in the biophysical sense, an organism at the genome scale.</p>
+                        <p>The COnstraints Based Reconstruction and Analysis (<b>COBRA</b>) approach to systems biology accepts the fact that we <b>do not possess sufficiently detailed parameter data</b> to precisely model, in the biophysical sense, an organism at genome-scale.</p>
 <br>
-                          <p>The COBRA approach focuses on <b>employing physicochemical constraints</b> to define the set of feasible states for a biological network in a given condition based on current knowledge. These constraints include <b>compartmentalization</b>, <b>mass conservation</b>, <b>molecular crowding</b>, and <b>thermodynamic directionality</b>. More recently, transcriptome data have been used to reduce the size of the set of computed feasible states.</p>
+                          <p>Increasingly, <b>omics data</b> has been used to define the set of feasible states for a biological network in a given condition based on current knowledge. These constraints include <b>compartmentalization</b>, <b>mass conservation</b>, <b>molecular crowding</b>, and <b>thermodynamic directionality</b>. More recently, transcriptome data have been used to reduce the size of the set of computed feasible states.</p>
 <br>
                           <p>
-                            Although <b>COBRA</b> methods may not provide a unique solution, they provide a <b>reduced set of solutions</b> that may be used to <b>guide</b> biological hypothesis <b>development</b>. Given its initial success, COBRA has attracted attention from many investigators and has <b>developed rapidly in recent years</b> based on contributions from a growing number of laboratories – COBRA methods have been used in <b>hundreds of studies</b>.</p>
+                            Although <b>COBRA</b> methods may not provide a unique solution, they provide a <b>reduced set of solutions</b> that may be used to <b>guide</b> biological hypothesis <b>development</b>. Given its success, COBRA has attracted attention from many investigators and has <b>developed rapidly in recent years</b> based on contributions from a growing number of laboratories – COBRA methods have been used in <b>hundreds of studies</b> to deal with the complex relationships and high dimensionality of the next generation of COBRA models.</p>
                     </div>
-                    <span class="image"><img src="images/stoichio.png" alt="varun" /></span>
+                    <span class="image"><img src="images/stoichio.png" alt="" /></span>
                 </div>
             </section>
             <section id="intro" class="main">
@@ -49,9 +49,9 @@ layout: default
                         </header>
                         <p>The <b>openCOBRA project</b> has arisen to provide researchers with <b>easy access</b> to core COBRA methodologies, and to provide a repository for community contributed modules that build off of these core COBRA features. The <b>openCOBRA project</b> was initiated with tools for <b>MATLAB</b> but has now grown to include <b>Python</b> and <b>Julia</b>-based modules for dealing with the complex relationships of the next generation of COBRA models.</p>
 <br>
-                        <p>The openCOBRA project is currently maintained by <a href="http://sbrg.ucsd.edu/Researchers/Ebrahim">Ali Ebrahim</a> and <a href="http://lewislab.ucsd.edu/lab/n/">Nathan Lewis</a> from UCSD and <a href="http://wwwen.uni.lu/lcsb/research/systems_biochemistry/">Ronan Fleming</a> from the University of Luxembourg.</p>
+                        <p>The openCOBRA project is currently lead by <a href="http://lewislab.ucsd.edu/lab/n/"><b>Nathan Lewis</b></a> from UCSD, <a href="http://wwwen.uni.lu/lcsb/research/systems_biochemistry/"><b>Ronan Fleming</b></a> from the University of Luxembourg, and <a href="http://www.dtu.dk/english/service/phonebook/person?id=87972&tab=2&qt=dtupublicationqueryy"><b>Nikolaus Sonnenschein</b></a> from the Technical University of Denmark.</p>
                     </div>
-                    <span class="image"><img src="images/history.png" alt="varun" /></span>
+                    <span class="image"><img src="images/history.png" alt="" /></span>
                 </div>
             </section>
             <section id="citation" class="main special">
@@ -60,7 +60,7 @@ layout: default
                 </header>
                     {% for item in site.citation %}
                     <p style="clear: both;">
-                    <span class="image {% cycle 'left', 'right' %}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" /></span>
+                    <span class="image {% cycle 'left', 'right' %}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" height="185px" /></span>
                     <h3> <div align="left">{{ item.title }}<div> </h3>
                     <div align="left">{{ item.description }}</div>
                     <br>
@@ -70,12 +70,13 @@ layout: default
             </section>
             <section id="collaborators" class="main special">
                 <header class="major">
-                    <h2>Who is working on the openCOBRA project?</h2>
+                    <h2>Who is working on the <b>openCOBRA</b> project?</h2>
                 </header>
+                In partnership with developers around the world:<br><br>
                 <table>
                   <tr>
                     {% for item in site.collaborators %}
-                      <td><a href="{{ item.remoteurl }}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" /></a></td>
+                      <td width="25%"><a href="{{ item.remoteurl }}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" height="100px"/></a></td>
                     {% endfor %}
                   </tr>
                 </table>

@@ -172,8 +172,8 @@ jQuery(document).ready(function($) {
 // typing animation
 $(function() {
     $(".typed").typed({
-        strings: ["Welcome to the openCOBRA project!"],
+        strings: ["... an open-source, community-developed code base to enable constraint-based reconstruction and analysis."],
         startDelay: 1000,
-        typeSpeed: 10
+        typeSpeed: 30,
     });
 });
