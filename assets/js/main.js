@@ -172,7 +172,7 @@ jQuery(document).ready(function($) {
 // typing animation
 $(function() {
     $(".typed").typed({
-        strings: ["... an open-source, community-developed code base to enable constraint-based reconstruction and analysis."],
+        strings: ["Open-source, community-developed code base for COnstraint-Based Reconstruction and Analysis."],
         startDelay: 500,
         typeSpeed: 2,
     });
