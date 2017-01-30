@@ -73,12 +73,12 @@ layout: default
                     <h2>Who is working on the <b>openCOBRA</b> project?</h2>
                 </header>
                 In partnership with developers around the world:<br><br>
-                <table>
-                  <tr>
-                    {% for item in site.collaborators %}
-                      <td width="25%"><a href="{{ item.remoteurl }}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" height="100px"/></a></td>
-                    {% endfor %}
-                  </tr>
-                </table>
+                  <ul class="featureslogo" width="100px">
+                      {% for item in site.collaborators %}
+                      <li width="100px">
+                          <div style="align-center;"><a href="{{ item.remoteurl }}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" height="100px"></a></div>
+                      </li>
+                      {% endfor %}
+                  </ul>
             </section>
         </div>

@@ -2783,6 +2783,32 @@ table.alt tbody tr td {
     padding: 0;
 }
 
+.featureslogo {
+    width: calc(100% + 2em);
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: -6em;
+}
+
+.featureslogo li {
+  margin-top: 0em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 1em;
+}
+
+
 .features li:nth-child(1),
 .features li:nth-child(2),
 .features li:nth-child(3) {
