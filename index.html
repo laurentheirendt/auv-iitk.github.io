@@ -17,7 +17,8 @@ layout: default
                         <span class="icon major {{item.style}}"><a href="{{item.remoteurl}}"><img src="{{item.image}}" height="{{item.size}}"/></a></span>
                         <h3><a href="{{item.remoteurl}}">{{ item.title }}</a></h3>
                         <p>{{ item.description }}</p><br>
-                        <a href="{{ item.remoteurl }}" class="button">Get it!</a>
+                        <a href="{{ item.remoteurl }}"><img src="images/githubLOGO.png" height="45px"></a><br>
+                        <a href="{{ item.remoteweb }}" class="button">Learn More</a>
                         <ul class="actions">
                             <li></li>
                         </ul>
@@ -73,10 +74,10 @@ layout: default
                     <h2>Who is working on the <b>openCOBRA</b> project?</h2>
                 </header>
                 In partnership with developers around the world:<br><br>
-                  <ul class="featureslogo" width="100px">
+                  <ul class="featureslogo">
                       {% for item in site.collaborators %}
-                      <li width="100px">
-                          <div style="align-center;"><a href="{{ item.remoteurl }}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" height="100px"></a></div>
+                      <li>
+                          <div style="align-center;"><a href="{{ item.remoteurl }}"><img src="{{ site.baseurl }}/{{ item.image }}" alt="" width="100%"></a></div>
                       </li>
                       {% endfor %}
                   </ul>
