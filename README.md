@@ -1,20 +1,25 @@
-[![Build Status](https://travis-ci.org/AUV-IITK/auv-iitk.github.io.svg?branch=master)](https://travis-ci.org/AUV-IITK/auv-iitk.github.io)
+# openCOBRA.github.io
 
-## StellarEnhanced jekyll template
+# Installation instructions
 
-Jekyll blog based on [Stellar](https://html5up.net/stellar). Served at auv-iitk.github.io
+Make sure to have `ruby` (and `gem`) installed.
 
-## Usage
+Run the following commands from within the cloned folder:
+```bash
+gem install jekyll bundler
+bundle install
+```
 
-Fork the repo
-Rename to `username.github.io`
-Modify the _config file
-Replace all the posts and images with your data
+# Building and displaying the website locally
 
-## Bugs and Issues
+Build the website locally from within the cloned folder:
+```bash
+bundle exec jekyll build
+```
+Launch the local Jekyll server:
+```bash
+bundle exec jekyll serve
+```
+The local website address is displayed.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/auv-iitk/auv-iitk.github.io/issues) here on GitHub
-
-## Copyright and License
-
-Copyright ShikherVerma. All rights reserved for the files under `_posts`, `_images`, `_vehicles`; the rest of the code is released under the [MIT](https://github.com/ShikherVerma/shikherverma.github.io/blob/gh-pages/LICENSE) license.
+*Website design based on Jekyll blog that is based on [Stellar](https://html5up.net/stellar).*
