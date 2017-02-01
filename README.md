@@ -1,23 +1,23 @@
 # openCOBRA.github.io
 
-# Installation instructions
+## Installation instructions
 
 Make sure to have `ruby` (and `gem`) installed.
 
 Run the following commands from within the cloned folder:
-```bash
+```sh
 gem install jekyll bundler
 bundle install
 ```
 
-# Building and displaying the website locally
+## Building and displaying the website locally
 
 Build the website locally from within the cloned folder:
-```bash
+```sh
 bundle exec jekyll build
 ```
 Launch the local Jekyll server:
-```bash
+```sh
 bundle exec jekyll serve
 ```
 The local website address is displayed.
